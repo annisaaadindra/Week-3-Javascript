@@ -1,0 +1,58 @@
+<html> 
+	<head> 
+
+	</head> 
+	
+	<body> 
+		<script language="JavaScript" type="text/javascript"> 
+			var x = prompt("Masukkan angka: ");
+			
+			document.write("Angka " + x + "  " + CekPrima(x));
+			
+			function CekPrima(angka)
+			{
+				var angka; 
+				// var i = 2;
+				var jenis;
+				if(angka >= 2)
+				{
+					if(angka == 2)
+					{
+						jenis = "adalah bilangan prima";
+					}
+					
+					else
+					{
+						var j = (angka+1) / 2;
+
+						// var j = angka/2 + 1;
+						
+						for(i=2; i<=j; i++)
+						{
+							if(angka%i == 0)
+							{
+								jenis = " bukan bilangan prima dan nilai j adalah " + j;
+								break;
+							}
+
+							else
+							{
+								jenis = "adalah bilangan prima dan nilai j adalah " + j;
+							}
+							
+						}
+						
+					}
+
+				}
+
+				else
+				{ jenis = "bukan bilangan prima"} ;
+
+				return jenis;
+			}			
+ 
+ 
+		</script> 
+	</body> 
+</html> 

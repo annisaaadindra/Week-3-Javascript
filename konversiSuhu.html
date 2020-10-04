@@ -1,0 +1,31 @@
+<html> 
+	<head> 
+
+	</head> 
+	
+	<body> 
+		<script language="JavaScript" type="text/javascript"> 
+			var Celcius= prompt("Masukkan Suhu Celcius : ");
+			
+			 document.write("Suhu Celcius = " + Celcius);
+			 document.write("<br> Suhu Reamur = " + Reamur(Celcius));
+			 document.write("<br> Suhu Fahrenheit = " + Fahrenheit(Celcius));
+
+
+
+			function Reamur(Celcius)
+			{ 
+				var Reamur = 4/5 * Celcius;
+				return Reamur; 
+			} 
+
+			function Fahrenheit (Celcius)
+			{ 
+				var Fah = (9/5 * Celcius) + 32;
+				return Fah; 
+			} 
+ 
+ 
+		</script> 
+	</body> 
+</html> 

@@ -1,0 +1,29 @@
+<html> 
+	<head> 
+
+	</head> 
+	
+	<body> 
+		<script language="JavaScript" type="text/javascript"> 
+			var x = prompt("Masukkan angka: ");
+			
+			document.write("Angka = " + x + " adalah bilangan " + GanjilGenap(x));
+			
+			function GanjilGenap(angka)
+			{
+				var jenis;
+				if(angka%2 == 0)
+				{
+					jenis = "genap";
+				}
+
+				else
+				{ jenis = "ganjil"} ;
+
+				return jenis;
+			}			
+ 
+ 
+		</script> 
+	</body> 
+</html> 

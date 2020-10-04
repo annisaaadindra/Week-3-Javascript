@@ -1,0 +1,26 @@
+<html> 
+	<head> 
+
+	</head> 
+	
+	<body> 
+		<script language="JavaScript" type="text/javascript"> 
+			var harga = prompt("Masukkan harga barang-barang (Rp) : ");
+			var diskonPersen = prompt("Masukkan besaran diskon(%) : ")
+
+			 document.write("Harga awal Rp" + harga);
+			 document.write("<br> Diskon sebesar " + diskonPersen + "%");
+			 document.write("<br> Harga setelah diskon: Rp" + diskon(harga, diskonPersen));
+
+
+			 function diskon(hargaAwal, diskonPersen) 
+			{ 
+				var diskon; 
+				diskon = diskonPersen/100 * hargaAwal; 
+				hargaDiskon = hargaAwal - diskon; 
+				return hargaDiskon; 
+			} 
+ 
+		</script> 
+	</body> 
+</html> 
